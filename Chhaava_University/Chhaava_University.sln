@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth", "..\Auth\Auth.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teacher", "..\Teacher\Teacher.csproj", "{69C94786-084F-447A-9D49-FF8DD929B02F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course", "..\Course\Course.csproj", "{0544651C-BE69-460C-A7E5-8BD93842F4BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Result", "..\Result\Result.csproj", "{C9B7482A-9324-4137-ADFC-74DAF94097D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{69C94786-084F-447A-9D49-FF8DD929B02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C94786-084F-447A-9D49-FF8DD929B02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69C94786-084F-447A-9D49-FF8DD929B02F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0544651C-BE69-460C-A7E5-8BD93842F4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0544651C-BE69-460C-A7E5-8BD93842F4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0544651C-BE69-460C-A7E5-8BD93842F4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0544651C-BE69-460C-A7E5-8BD93842F4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B7482A-9324-4137-ADFC-74DAF94097D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B7482A-9324-4137-ADFC-74DAF94097D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B7482A-9324-4137-ADFC-74DAF94097D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B7482A-9324-4137-ADFC-74DAF94097D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
