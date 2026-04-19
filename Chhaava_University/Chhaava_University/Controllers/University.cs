@@ -10,17 +10,21 @@ namespace Chhaava_University.Controllers
     public class UniversityController : ControllerBase
     {
         private readonly IUniversityService _service;
+        private readonly ILogger<University> _Logger;
 
-        public UniversityController(IUniversityService service)
+        public UniversityController(IUniversityService service,ILogger<University> logger)
         {
             _service = service;
+            _Logger = logger;
         }
 
         // GET: api/university
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
+           
             var result = await _service.GetAllAsync();
+            _Logger.LogInformation("User all Data show ");
             return Ok(result);
         }
 

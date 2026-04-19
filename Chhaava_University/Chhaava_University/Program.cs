@@ -2,8 +2,15 @@ using Chhaava_University.Data;
 using Chhaava_University.Repository;
 using Chhaava_University.Service;
 using Microsoft.EntityFrameworkCore;
+using NLog;
+using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
+var logger = LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
+builder.Logging.ClearProviders();
+
+// Register NLog
+builder.Host.UseNLog();
 
 // Add services to the container.
 
@@ -19,6 +26,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IUniversityRepository, UniversityRepository>();
 builder.Services.AddScoped<IUniversityService, UniversityService>();
+
+logger.Info("++===============================Server Start==================================++");
+
 var app = builder.Build();
 
 
