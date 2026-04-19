@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course", "Course\Course.csp
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chhaava_University.Testing", "..\Chhaava_University.Testing\Chhaava_University.Testing.csproj", "{B50F0C89-FF3A-45F8-AC97-4E138E4835A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50F0C89-FF3A-45F8-AC97-4E138E4835A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50F0C89-FF3A-45F8-AC97-4E138E4835A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50F0C89-FF3A-45F8-AC97-4E138E4835A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50F0C89-FF3A-45F8-AC97-4E138E4835A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{139A1CB5-2CDF-4DFE-B2FA-5C77034B6D1B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{8C49577A-66AA-48B2-A549-71A8CFE1BE6E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{0F61CDF8-12D5-4E55-8857-287D74B34D8A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B50F0C89-FF3A-45F8-AC97-4E138E4835A6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6112E67D-59C3-4E01-9826-2D1E1131B367}
