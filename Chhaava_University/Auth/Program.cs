@@ -18,7 +18,7 @@ builder.Services.AddSwaggerGen();
 
 
 //DbContext Register
-var Auth = builder.Configuration.GetConnectionString("Auth");
+var Auth = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(Auth);

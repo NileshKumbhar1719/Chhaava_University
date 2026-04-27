@@ -1,7 +1,7 @@
-﻿using Course.Models;
+﻿using Departments.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Course.Data
+namespace Departments.Data
 {
     public class AppDbContext :DbContext
     {
@@ -9,8 +9,8 @@ namespace Course.Data
         {
 
         }
-
-        public DbSet<Courses> courses { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        
 
         
     }
