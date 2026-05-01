@@ -131,6 +131,30 @@
       ],
       "UpstreamPathTemplate": "/api/Exam",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResultStudents",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "Result",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ResultStudents",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResultStudents/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "Result",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ResultStudents/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     }
   ],
   "GlobalConfiguration": {

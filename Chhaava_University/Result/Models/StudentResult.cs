@@ -1,6 +1,6 @@
 ﻿namespace Result.Models
 {
-    public class Result
+    public class StudentResult   
     {
         public int Id { get; set; }
         public int Marks { get; set; }
