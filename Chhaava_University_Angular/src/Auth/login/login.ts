@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Service } from '../service';
+import { Router, RouterLink } from '@angular/router';
 
 interface LoginData {
   email: string;
@@ -11,16 +12,16 @@ interface LoginData {
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './login.html',
-  styleUrl: './login.css',
+  styleUrls: ['./login.css'],
 })
 export class Login {
 
   email: string = '';
   password: string = '';
 
-  constructor(private service: Service) {}
+  constructor(private service: Service,private Router: Router) {}
 
   login() {
     const data: LoginData = {
@@ -35,6 +36,7 @@ export class Login {
         localStorage.setItem('token', response.token);
         localStorage.setItem('role', response.role);
         alert('Login successful');
+        this.Router.navigate(['/home']);
       },
 
       error: (error) => {

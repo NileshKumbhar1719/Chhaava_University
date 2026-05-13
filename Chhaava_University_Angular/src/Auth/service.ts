@@ -1,10 +1,19 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, throwError } from 'rxjs';
 
 interface LoginData {
   email: string;
   password: string;
+}
+interface RegisterData {
+  firstname:string;
+  lastname :string;
+  username: string;
+  email: string;
+  password: string;
+  role: string;
+
 }
 
 @Injectable({
@@ -21,6 +30,30 @@ export class Service {
       .pipe(
         catchError(this.handleError)
       );
+  }
+
+  _register(data: RegisterData): Observable<any> {
+    return this.http.post(`${this.baseUrl}/Authe/register`, data)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
+ _logout(): Observable<any> {
+
+    const token = localStorage.getItem('token');
+
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${token}`
+    });
+
+    return this.http.post(
+      `${this.baseUrl}/Authe/logout`,
+      {},
+      { headers }
+    ).pipe(
+      catchError(this.handleError)
+    );
   }
 
   private handleError(error: any) {
