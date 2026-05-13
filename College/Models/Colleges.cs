@@ -1,6 +1,6 @@
 ﻿namespace College.Models
 {
-    public class College
+    public class Colleges
     {
         public int Id { get; set; }
         public string Name { get; set; }
