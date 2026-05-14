@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+app-header,
+app-footer {
+  display: block;
+}
+
+router-outlet {
+  display: block;
+}

@@ -1,0 +1,36 @@
+<section class="auth-page">
+  <div class="auth-card">
+    <h1>Create your account</h1>
+    <form (ngSubmit)="register()" novalidate>
+      <div class="field-group">
+        <label for="Firstname">Firstname</label>
+        <input type="text" id="Firstname" name="Firstname" [(ngModel)]="firstname" required />
+      </div>
+      <div class="field-group">
+        <label for="lastname">Lastname</label>
+        <input type="text" id="lastname" name="lastname" [(ngModel)]="lastname" required />
+      </div>
+      <div class="field-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required />
+      </div>
+      <div class="field-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" required />
+      </div>
+      <div class="field-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required />
+      </div>
+      <div class="field-group">
+        <label for="role">Role</label>
+        <select id="role" name="role" [(ngModel)]="role" required>
+          <option value="Admin">Admin</option>
+          <option value="User">User</option>
+        </select>
+      </div>
+      <button type="submit" class="button primary-button">Register</button>
+      <p class="alt-text">Already have an account? <a routerLink="/login">Login here</a>.</p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,101 @@
+.home-page {
+  padding: 2rem 1.5rem 3rem;
+}
+
+.hero {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  grid-template-columns: 1.1fr 0.9fr;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
+  color: #0f172a;
+}
+
+.hero-copy p {
+  margin: 1.25rem 0 1.75rem;
+  max-width: 40rem;
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  min-height: 320px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, #3b82f6 0%, #6366f1 100%);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.2);
+}
+
+.features {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1160px;
+  margin: 3rem auto 0;
+}
+
+.feature-box {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.feature-box h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.feature-box p {
+  color: #475569;
+  margin: 0.75rem 0 0;
+}
+
+.primary-button,
+.secondary-button {
+  border-radius: 0.85rem;
+  padding: 0.95rem 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.primary-button {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.secondary-button {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+@media (max-width: 840px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
