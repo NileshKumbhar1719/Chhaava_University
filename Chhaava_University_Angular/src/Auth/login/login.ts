@@ -35,6 +35,7 @@ export class Login {
 
         localStorage.setItem('token', response.token);
         localStorage.setItem('role', response.role);
+        localStorage.setItem('username', response.username || response.name || 'User');
         alert('Login successful');
         this.Router.navigate(['/home']);
       },

@@ -2,8 +2,9 @@
   <a class="brand" routerLink="/home">Chhaava University</a>
   <nav class="nav-menu">
     <a routerLink="/home">Home</a>
-    <a routerLink="/login">Login</a>
-    <a routerLink="/register">Register</a>
-    <button type="button" (click)="logout()">Logout</button>
+    <a routerLink="/login" *ngIf="!isLoggedIn">Login</a>
+    <a routerLink="/register" *ngIf="!isLoggedIn">Register</a>
+    <span *ngIf="isLoggedIn">Welcome, {{ username }}</span>
+    <button type="button" (click)="logout()" *ngIf="isLoggedIn">Logout</button>
   </nav>
 </header>
